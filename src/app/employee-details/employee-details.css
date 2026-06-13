@@ -1,0 +1,11 @@
+h2 {
+  text-align: center;
+}
+
+div {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}

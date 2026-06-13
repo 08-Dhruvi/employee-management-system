@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}

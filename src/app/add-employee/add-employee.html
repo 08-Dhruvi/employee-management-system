@@ -1,0 +1,45 @@
+<h2>Add Employee</h2>
+
+<form [formGroup]="employeeForm" (ngSubmit)="addEmployee()">
+
+    <input type="text" placeholder="Name" formControlName="name">
+
+    <div *ngIf="employeeForm.get('name')?.touched &&
+                employeeForm.get('name')?.invalid">
+        Name is required
+    </div>
+
+    <br>
+
+    <input type="email" placeholder="Email" formControlName="email">
+
+    <div *ngIf="employeeForm.get('email')?.touched &&
+                employeeForm.get('email')?.invalid">
+        Enter a valid email
+    </div>
+
+    <br>
+
+    <input type="text" placeholder="Department" formControlName="department">
+
+    <div *ngIf="employeeForm.get('department')?.touched &&
+                employeeForm.get('department')?.invalid">
+        Department is required
+    </div>
+
+    <br>
+
+    <input type="number" placeholder="Salary" formControlName="salary">
+
+    <div *ngIf="employeeForm.get('salary')?.touched &&
+                employeeForm.get('salary')?.invalid">
+        Salary must be at least 1000
+    </div>
+
+    <br>
+
+    <button type="submit" [disabled]="employeeForm.invalid">
+        Add Employee
+    </button>
+
+</form>

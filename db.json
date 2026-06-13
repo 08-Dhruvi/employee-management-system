@@ -1,0 +1,47 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "department": "IT",
+      "salary": 30000
+    },
+    {
+      "id": "kujbtrAQLdY",
+      "name": "dhruvi",
+      "email": "dhruvi@gmail.com",
+      "department": "IT",
+      "salary": 12000
+    },
+    {
+      "id": "cBzrZULIsfw",
+      "name": "dhruvi",
+      "email": "dhruvi@gmail.com",
+      "department": "IT",
+      "salary": 12000
+    },
+    {
+      "id": "hPFhzyWECLs",
+      "name": "shiv",
+      "email": "shiv@gmail.com",
+      "department": "HR",
+      "salary": 12000
+    },
+    {
+      "id": "xbczRSpjWsU",
+      "name": "Dharmi",
+      "email": "dj@gmail.com",
+      "department": "DevOp",
+      "salary": 12000
+    },
+    {
+      "id": "boU6_bzaR7U",
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "department": "IT",
+      "salary": 10000
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

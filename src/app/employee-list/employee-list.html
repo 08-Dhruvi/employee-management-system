@@ -1,0 +1,61 @@
+<h2>Employee List</h2>
+
+<div class="dashboard">
+
+    <div class="card">
+        <h3>Total Employees</h3>
+        <p>{{ allEmployees.length }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Total Salary</h3>
+        <p>{{ getTotalSalary() }}</p>
+    </div>
+
+    <div class="card">
+        <h3>Departments</h3>
+        <p>{{ getDepartmentCount() }}</p>
+    </div>
+
+</div>
+
+<br>
+
+<div class="search-container">
+    <input type="text" name="searchText" autocomplete="off" placeholder="Search Employee" [(ngModel)]="searchText" (input)="searchEmployee()">
+</div>
+
+<br><br>
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Department</th>
+        <th>Salary</th>
+        <th>Actions</th>
+    </tr>
+
+    <tr *ngFor="let employee of employees">
+        <td>{{ employee.id }}</td>
+        <td>{{ employee.name }}</td>
+        <td>{{ employee.email }}</td>
+        <td>{{ employee.department }}</td>
+        <td>{{ employee.salary }}</td>
+        <td>
+            <button (click)="viewEmployee(employee.id)">
+                View
+            </button>
+
+            <button (click)="editEmployee(employee.id)">
+                Edit
+            </button>
+
+            <button (click)="deleteEmployee(employee.id)">
+                Delete
+            </button>
+        </td>
+    </tr>
+
+</table>
