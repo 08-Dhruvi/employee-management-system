@@ -22,6 +22,9 @@ A simple Employee Management System built using Angular. This project helps mana
 - JSON / LocalStorage (or API)
 
 ---
+## Live Demo
+
+🔗 https://08-dhruvi.github.io/employee-management-system/
 
 ## How to run this project
 
